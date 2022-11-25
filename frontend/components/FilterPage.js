@@ -44,6 +44,37 @@ export default function filterPage({ route, navigation }) {
   const [longitude, setLongitude] = useState(long);
   const [searchFilter, setSearchFilter] = useState("");
 
+  const businessData = [
+    { 
+      name : "Taste Of India", 
+      address : "2623 Monroe St #150", 
+      photo_ref : "",
+      distance : "2.2 mi",
+      tags: ["indian", "brunch"]
+    },
+    {
+      name : "Curry in the Box", 
+      address : "3050 Cahill Main #3, Fitchburg, WI53711", 
+      photo_ref : "",
+      distance : "3.2 mi",
+      tags: ["indian", "brunch"]
+    },
+    {
+      name : "China Wok", 
+      address : "204A S Century Ave #6, Waunakee, WI 53597", 
+      photo_ref : "",
+      distance : "4.0 mi",
+      tags: ["chinese", "brunch"]
+    },
+    {
+      name : "Flaming Wok", 
+      address : "4237 Lian Rd H, Madison, WI 53704", 
+      photo_ref : "",
+      distance : "5.1 mi",
+      tags: ["chinese", "brunch"]
+    }
+]
+
   const theme = extendTheme({
     colors: {
       // Add new color
@@ -146,14 +177,10 @@ export default function filterPage({ route, navigation }) {
 
   async function apiCall(tempString) {
     setSearchFilter(tempString);
-    //console.log(searchFilter);
-    await fetch('https://ancient-island-59052.herokuapp.com/business/' + lat + "/" + long + "/" + searchFilter)
-      .then(response => response.json())
-      .then(data => {
-        console.log(data)
-        navigation.navigate('Drag and Drop', { selectedOptions: selecttedOptions, lat: latitude, long: longitude, json: data });
+    
+        navigation.navigate('Drag and Drop', { selectedOptions: selecttedOptions, lat: latitude, long: longitude, json: businessData });
 
-      });
+    
   }
   async function switchPage() {
     let tempString = "";
