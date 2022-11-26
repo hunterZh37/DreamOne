@@ -19,6 +19,7 @@ import {
     extendTheme,
 
 } from "native-base"
+import { DebugInstructions } from 'react-native/Libraries/NewAppScreen';
 
 
 export default function DetailView({ navigation, route }) {
@@ -44,6 +45,7 @@ export default function DetailView({ navigation, route }) {
       });
     const { morning, afternoon, night } = route.params;
 
+    console.log({morning}, {afternoon}, {night});
     const [showMorningPlanner, setShowMorningPlanner] = useState(morning.name !== undefined && morning.name !== null);
     const [showAfternoonPlanner, setShowAfternoonPlanner] = useState(afternoon.name !== undefined && afternoon.name !== null);
     const [showNightPlanner, setShowNightPlanner] = useState(night.name !== undefined && night.name !== null);
@@ -51,9 +53,8 @@ export default function DetailView({ navigation, route }) {
     function showTags(tags) {
         let temp = [];
         let index = 0;
-        for (const [key, value] of Object.entries(tags)) {
-            value.forEach(element => {
-                console.log(element);
+        console.log("tags : " + tags);
+        for (const element of tags) {
                 let leftOffset = 250;
                 temp.push(
                     <View key = {index} style={{ padding: 4 }}>
@@ -72,7 +73,7 @@ export default function DetailView({ navigation, route }) {
                     </View>
                 );
                 leftOffset -= 20;
-            });
+            
             index += 1;
         }
        
