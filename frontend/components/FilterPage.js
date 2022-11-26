@@ -50,7 +50,7 @@ export default function filterPage({ route, navigation }) {
       address : "2623 Monroe St #150, Madison, WI 53715", 
       photo_ref : "https://www.blueosa.com/wp-content/uploads/2020/01/the-best-top-10-indian-dishes.jpg",
       distance : "1.2 mi",
-      tags: ["indian", "brunch"] ,
+      tags: ["indian"] ,
       dayTime : "morning",
     },
     {
@@ -58,7 +58,7 @@ export default function filterPage({ route, navigation }) {
       address : "3050 Cahill Main #3, Fitchburg, WI 53711", 
       photo_ref : "https://s3.amazonaws.com/secretsaucefiles/photos/images/000/099/395/large/Spoon-NIndian-Naan-Eunice.jpg?1485295991",
       distance : "3.2 mi",
-      tags: ["indian", "brunch"],
+      tags: ["indian"],
       dayTime : "morning"
     },
     {
@@ -66,7 +66,7 @@ export default function filterPage({ route, navigation }) {
       address : "532 S Park St #1620, Madison, WI 53715",
       photo_ref : "http://img1.wsimg.com/isteam/ip/b144c72e-bc03-4557-9b3f-4b76474493d0/FA3A1485.jpg",
       distance : "3.5 mi",
-      tags : ["chinese", "brunch"],
+      tags : ["chinese"],
       dayTime : "afternoon"
     },
     {
@@ -74,7 +74,7 @@ export default function filterPage({ route, navigation }) {
       address : "204A S Century Ave #6, Waunakee, WI 53597", 
       photo_ref : "https://scpr.brightspotcdn.com/dims4/default/1c44946/2147483647/strip/true/crop/2226x1486+0+0/resize/880x587!/quality/90/?url=http%3A%2F%2Fscpr-brightspot.s3.amazonaws.com%2Fe6%2F3d%2Fbef3fcb2430099cb314a741a37ec%2Fgenghixcohen1.jpeg",
       distance : "4.0 mi",
-      tags : ["chinese", "brunch"],
+      tags : ["chinese"],
       dayTime : "afternoon"
     },
     {
@@ -82,7 +82,7 @@ export default function filterPage({ route, navigation }) {
       address : "902 Regen St, Madison, WI 53715", 
       photo_ref : "https://thelistwire.usatoday.com/wp-content/uploads/sites/99/2022/07/USATSI_15565219.jpg?w=800&h=512&crop=1",
       distance : "5.1 mi",
-      tags : ["chinese", "brunch"],
+      tags : ["chinese"],
       dayTime : "night"
     },
     {
@@ -90,7 +90,7 @@ export default function filterPage({ route, navigation }) {
       address : "91 Regen St, Madison, WI 53715",
       photo_ref : "https://lindseyeatsla.com/wp-content/uploads/2021/11/LindseyEats_Spicy_Garlic_Noodles-3.jpg",
       distance : "5.4 mi",
-      tags : ["chinese", "brunch"],
+      tags : ["chinese"],
       dayTime : "night"
 
     },
@@ -99,7 +99,7 @@ export default function filterPage({ route, navigation }) {
       address : "1401 University Ave, Madison, WI 53715",
       photo_ref : "https://tiffycooks.com/wp-content/uploads/2021/09/Screen-Shot-2021-09-21-at-5.21.37-PM.png",
       distance : "6.2 mi",
-      tags : ["chinese", "brunch"],
+      tags : ["chinese"],
       dayTime : "night"
     }
 ]
